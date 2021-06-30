@@ -44,7 +44,7 @@ class AttractionsController < ApplicationController
       @attraction = Attraction.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Only allow a list of trusted parameters through (this was done by ruby)
     def attraction_params
       params.require(:attraction).permit(:place, :location, :went)
     end
